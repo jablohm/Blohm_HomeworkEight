@@ -1,30 +1,68 @@
 .home {
-    .hero {
-        .imageholder {
-            .circles {
-                .yellow {
-                    border-radius: 100px;
-                    p {
-                        color: #000;
-                    }
-                }
-                .red {
-                    p {
+  .hero {
+    z-index: -1;
+    .imgholder {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/home_hero2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      .circles {
+        display: flex;
+        .yellow {
+          border-radius: 200px;
+          background-color: #ffd972;
+          width: 360px;
+          height: 360px;
+          z-index: 1;
+          box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 80%;
+          left: 50%;
+          transform: translate(-50%, -50%);
 
-                    }
-                }
-                img {
-                    width: 100vw;
-                    height: 100vh;
-                }
+          .text {
+            text-align: center;
+            padding: 40px;
+            h1 {
+              font-size: 20pt;
+              color: #000;
             }
+            p {
+              color: #000;
+              font-size: 12pt;
+            }
+          }
         }
+        .red {
+          text-align: center;
+          position: absolute;
+          top: 75%;
+          left: 50%;
+          z-index: 0;
+          transform: translate(40%, -130%);
+          border-radius: 100px;
+          width: 166px;
+          height: 166px;
+          background-color: #fcbcb8;
+
+          p {
+            font-size: 9pt;
+            font-style:oblique;
+            text-align: justify center;
+            padding-top: 46px;
+            padding-bottom: 66px;
+            padding-right: 33px;
+            padding-left: 36px;
+          }
+        }
+      }
     }
+  }
 }
-
-
-
-
 
 // // DESKTOP DESKTOP DESKTOP
 // @media screen and (min-width: 769px) {
@@ -32,20 +70,11 @@
 // }
 // // DESKTOP DESKTOP DESKTOP
 
-
-
-
-
-// // TABLET TABLET TABLET 
+// // TABLET TABLET TABLET
 // @media screen and (max-width: 768px) {
 
 //   }
-// // TABLET TABLET TABLET 
-
-
-
-
-
+// // TABLET TABLET TABLET
 
 // // PHONE PHONE PHONE
 // @media screen and (max-width: 360px) {

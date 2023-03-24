@@ -1,68 +1,68 @@
-.footer {    
-  .row {
-    display: flex;
-align-items: center;
-    justify-content: center;
-    height: 70px;
-    max-width: 100%;
+// .footer {    
+//   .row {
+//     display: flex;
+// align-items: center;
+//     justify-content: center;
+//     height: 70px;
+//     max-width: 100%;
 
-    background-color: none;
-    position: absolute;
+//     background-color: none;
+//     position: absolute;
 
-    .left {
-      margin-left: 25px;
-      margin-right: 25px;
-      justify-content: left;
-      color: #000;
-    }
-    .center {
-      margin-left: 25px;
-      margin-right: 25px;
-      display: flex;
-      justify-content: center;
-      color: #000;
+//     .left {
+//       margin-left: 25px;
+//       margin-right: 25px;
+//       justify-content: left;
+//       color: #000;
+//     }
+//     .center {
+//       margin-left: 25px;
+//       margin-right: 25px;
+//       display: flex;
+//       justify-content: center;
+//       color: #000;
 
-      .footerlinks {
-        color: #000;
-        text-decoration: none;
-        justify-content: space-evenly;
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-    }
-    .right {
-      margin-left: 25px;
-      margin-right: 25px;
-      justify-content: right;
-      display: flex;
-      .fb {
-        width: 20px;
-        height: 20px;
-        margin: 10px;
-      }
-      .ig {
-        width: 20px;
-        height: 20px;
-        margin: 10px;
-      }
-    }
-  }
-}
-
-// // DESKTOP DESKTOP DESKTOP
-// @media screen and (min-width: 769px) {
-
-// }
-// // DESKTOP DESKTOP DESKTOP
-
-// // TABLET TABLET TABLET
-// @media screen and (max-width: 768px) {
-
+//       .footerlinks {
+//         color: #000;
+//         text-decoration: none;
+//         justify-content: space-evenly;
+//         margin-left: 10px;
+//         margin-right: 10px;
+//       }
+//     }
+//     .right {
+//       margin-left: 25px;
+//       margin-right: 25px;
+//       justify-content: right;
+//       display: flex;
+//       .fb {
+//         width: 20px;
+//         height: 20px;
+//         margin: 10px;
+//       }
+//       .ig {
+//         width: 20px;
+//         height: 20px;
+//         margin: 10px;
+//       }
+//     }
 //   }
-// // TABLET TABLET TABLET
-
-// // PHONE PHONE PHONE
-// @media screen and (max-width: 360px) {
-
 // }
-// // PHONE PHONE PHONE
+
+// // // DESKTOP DESKTOP DESKTOP
+// // @media screen and (min-width: 769px) {
+
+// // }
+// // // DESKTOP DESKTOP DESKTOP
+
+// // // TABLET TABLET TABLET
+// // @media screen and (max-width: 768px) {
+
+// //   }
+// // // TABLET TABLET TABLET
+
+// // // PHONE PHONE PHONE
+// // @media screen and (max-width: 360px) {
+
+// // }
+// // // PHONE PHONE PHONE
