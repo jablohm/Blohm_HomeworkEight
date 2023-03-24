@@ -1,54 +1,168 @@
 * {
   margin: 0;
   padding: 0;
- font-family: Arial; 
+  font-family: Arial, Helvetica, sans-serif;
 }
-html, body {
-  height: 100%
+html,
+body {
+  height: 100%;
 }
-h1, h2, h3, h4, h5, h6, p {
-  margin-bottom: 16px
-}
-
-@font-face {
-    font-family: 'Caveat Bold';
-    src: url(fonts/Caveat-Bold.ttf) format(ttf);
-}
-@font-face {
-    font-family: 'Caveat Regular';
-    src: url(fonts/Caveat-Regular.ttf) format(ttf);
-}
-
-
-@font-face {
-    font-family: 'GillSans Italic';
-    src: url(fonts/GillSans-Italic.ttf) format(ttf);
-}
-@font-face {
-    font-family: 'GillSans Light';
-    src: url(fonts/GillSans-Light.ttf) format(ttf);
-}
-@font-face {
-    font-family: 'GillSans';
-    src: url(fonts/GillSans.ttf) format(ttf);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+  letter-spacing: 1pt;
 }
 
 @font-face {
-    font-family: 'Lato Bold';
-    src: url(fonts/Lato-Bold.ttf) format(ttf);
+  font-family: "Caveat Bold";
+  src: url(../fonts/Caveat-Bold.ttf) format("ttf");
 }
 @font-face {
-    font-family: 'Lato Bold Italic';
-    src: url(fonts/Lato-BoldItalic.ttf) format(ttf);
+  font-family: "Caveat Regular";
+  src: url(../fonts/Caveat-Regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "GillSans Italic";
+  src: url(../fonts/GillSans-Italic.ttf) format("ttf");
 }
 @font-face {
-    font-family: 'Lato Italic';
-    src: url(/fonts/Lato-Italic.ttf) format(ttf);
+  font-family: "GillSans Light";
+  src: url(../fonts/GillSans-Light.ttf) format("ttf");
 }
 @font-face {
-    font-family: 'Lato Regular';
-    src: url(/fonts/Lato-Regular.ttf) format(ttf);
+  font-family: "GillSans";
+  src: url(../fonts/GillSans.ttf) format("ttf");
 }
 
+@font-face {
+  font-family: "Lato Bold";
+  src: url(../fonts/Lato-Bold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Lato Bold Italic";
+  src: url(../fonts/Lato-BoldItalic.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Lato Italic";
+  src: url(../fonts/Lato-Italic.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Lato Regular";
+  src: url(../fonts/Lato-Regular.ttf) format("ttf");
+}
 
+.nav {
+  position: fixed;
+  left: 10px;
+  margin: 20px;
+  height: 70px;
+}
 
+.links .icon {
+  width: 500px;
+  display: flex;
+  margin-right: 100px;
+}
+
+.links .icon img {
+  width: 150px;
+  height: 55px;
+  justify-content: left;
+  align-items: left;
+}
+
+.links p {
+  color: #000;
+  font-weight: bolder;
+  font-style: oblique;
+  margin: 10px;
+}
+
+.links {
+  margin-left: -10px;
+  display: flex;
+  background-color: none;
+  height: 50px;
+  overflow: hidden;
+  /* opacity: 0; */
+  width: 100vw;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: height 0s ease-out, opacity 0.5s ease-out;
+  /* vh=viewport height; vw=viewport width one way to get around issues with 100% (mainly bc parent doesn't have parent on it) */
+}
+
+.links.active {
+  /* display: flex; */
+  height: 100vh;
+  opacity: 1;
+}
+
+.bars {
+  display: none;
+}
+
+.bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: #000;
+  height: 5px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.bars.active .bar:nth-child(1) {
+  transform: translateY(9.5px) rotate(45deg);
+}
+
+.bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.bars.active .bar:nth-child(3) {
+  transform: translateY(-9.5px) rotate(-45deg);
+}
+
+a {
+  color: #000;
+  //   font-family: 'Caveat Bold';
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:active {
+  border-bottom: #000;
+  border-width: 2px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .image .view {
+    display: flex;
+  }
+  .links .icon img {
+    display: none;
+  }
+  .links p {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+  .links {
+    height: 0;
+    opacity: 0;
+    flex-direction: column;
+  }
+}
