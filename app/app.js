@@ -8,13 +8,29 @@ function changeRoute() {
     });
 }
 
-function initURLlistener() {
+function initURLlisteners() {
     $(window).on("hashchange", changeRoute);
     changeRoute();
 }
 
+function initListeners () {
+    $(".bars").click(function(e) {
+        // console.log("clicked");
+        $(".bars").toggleClass("active");
+        $(".links").toggleClass("active");
+        // turns added class on and off
+    });
+
+    $(".links a").click(function(e) {
+        // console.log("clicked");
+        $(".bars").toggleClass("active");
+        $(".links").toggleClass("active");
+    });
+
+    
+}
 
 $(document).ready(function() {
-    initURLlistener();
-
-})
+    initListeners();
+    initURLlisteners();
+     });
