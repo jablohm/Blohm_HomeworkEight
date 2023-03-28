@@ -4,27 +4,43 @@
   background-size: cover;
 
   .content {
-    padding: 100px 50px 50px;
+    padding-top: 100px;
+
     h1 {
+      padding-left: 100px;
       font-size: 25pt;
       font-weight: bold;
-    
-      
     }
     .row {
-      width: 100%;
+      // background-color: red;
+      display: flex;
+      padding: 10px;
+      // justify-content: center;
       .col {
         width: 550px;
         height: 275px;
+        // background-color: blue;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 100px;
 
         .img {
-          width: 300px;
-          height: 275px;
+          img {
+            width: 300px;
+            height: 275px;
+            // background-color: purple;
+            border-radius: 10px;
+          }
         }
         .box {
           width: 250px;
           height: 275px;
           background-color: #fff;
+          border-radius: 10px;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
           h2 {
             font-size: 14pt;
             text-decoration: underline;
@@ -36,6 +52,7 @@
             height: 55px;
             font-size: 9pt;
           }
+
           .time {
             display: flex;
 
@@ -65,20 +82,55 @@
   }
 }
 
-// // DESKTOP DESKTOP DESKTOP
+// DESKTOP DESKTOP DESKTOP
 // @media screen and (min-width: 769px) {
 
 // }
 // // DESKTOP DESKTOP DESKTOP
 
 // // TABLET TABLET TABLET
-// @media screen and (max-width: 768px) {
 
-//   }
+@media screen and (max-width: 960px) {
+  .row {
+    flex-direction: column;
+    .col {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+}
 // // TABLET TABLET TABLET
 
 // // PHONE PHONE PHONE
-// @media screen and (max-width: 360px) {
+@media screen and (max-width: 660px) {
+  .row {
+    background-color: red;
 
-// }
+    .col {
+      padding-top: 50px;
+      padding-bottom: 100px;
+      flex-direction: column;
+      background-color: pink;
+      .img {
+        background-color: blue;
+        width: 350px;
+        height: 150px;
+        border-radius: 15px;
+        img {
+          background-color: yellow;
+          width: 350px;
+          height: 150px;
+          border-radius: 15px;
+        }
+      }
+      .box {
+        width: 400px;
+        height: 170px;
+        color: red;
+
+      }
+    }
+  }
+}
+
 // // PHONE PHONE PHONE
