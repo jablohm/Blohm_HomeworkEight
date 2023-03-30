@@ -1,5 +1,71 @@
+.login {
+  background-color: #FFD972;
+  .row {
+       width: 100vw;
+        height: 100vh;
+        display: flex;
+    .page {
+        padding: 100px;
+        text-align: left;
+        // height: 500px;
+        // width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .boxes {
+          padding: 100px;
+          width: 500px;
+          height: 500px;
+
+          input {
+            width: 215px;
+            border-bottom: #000;
+            border-top: #FFD972;
+            border-left: #FFD972;
+            border-right: #FFD972;
+            border-style:solid;
+            background-color: #FFD972;
+            height: 20px;
+         padding: 5px;
+         font-size: 12pt;
+         display: block;
+
+        }
+
+        button {
+          width: 250px;
+          height: 50px;
+          background-color: #FFD972;
+          color: #000;
+          box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+          border-style: none;
+          border-radius: 25px;
+          font-size: 25px;
+        }
+        }
+    }
+
+}
+}
+
+
+
+
+
+
+
+
 // DESKTOP DESKTOP DESKTOP
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 769px) {
+.login {
+  .row {
+    .page {
+            display: table;
+        }
+  }
+        
+    }
 
 }
 // DESKTOP DESKTOP DESKTOP

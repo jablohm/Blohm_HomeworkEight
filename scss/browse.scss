@@ -103,9 +103,6 @@
 
 // // PHONE PHONE PHONE
 @media screen and (max-width: 660px) {
-  .row {
-    background-color: red;
-
     .col {
       padding-top: 50px;
       padding-bottom: 100px;
@@ -116,21 +113,15 @@
         width: 350px;
         height: 150px;
         border-radius: 15px;
-        img {
-          background-color: yellow;
-          width: 350px;
-          height: 150px;
-          border-radius: 15px;
-        }
-      }
-      .box {
-        width: 400px;
-        height: 170px;
-        color: red;
-
+        // img {
+        //   background-color: yellow;
+        //   width: 350px;
+        //   height: 150px;
+        //   border-radius: 15px;
+        // }
       }
     }
   }
-}
+
 
 // // PHONE PHONE PHONE
